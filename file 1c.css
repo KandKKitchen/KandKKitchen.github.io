@@ -1,0 +1,24 @@
+.padding{
+    length:10%;
+    width:100%;
+    color: gainsboro;
+}
+h1{
+    color: red;
+}
+h3{
+    color: khaki;
+}
+button{
+    color: gold;
+}
+hr{
+    color: darkgray;
+}
+body {
+    backround-color: red;
+}
+img{
+    width:100%;
+    length:80%;
+}
