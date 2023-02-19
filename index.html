@@ -4,6 +4,22 @@
   <link rel="stylesheet" type="text/css" href="file 1c.css">
   <meta charset="UTF-8">
   <title>KandKKitchen</title>
+  <style>
+.container { 
+  height: 200px;
+  position: relative;
+  border: 3px solid green; 
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+</style>
 </head>
 
 <body>
@@ -14,23 +30,8 @@
   <p style="text-align:center;">location:317 main street lemberg SK Canada</p>
   <p style="text-align:center;">phone number:+1(306)-335-8888</p>
   <p style="text-align:center;">welcome to K & K Kitchen, we serve chinese and canadian dishes</p>
-  <style>
-  .container {
-    height: 200px;
-    position: relative;
-  }
-
-  .vertical-center {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-  }
-  </style>
-
   <div class="container">
-    <div class="vertical-center">
+    <div class="center">
       <a href="file2 - Copy.html"><button>click here to see the menu</button></a> 
     </div>
   </div>
