@@ -3,21 +3,28 @@
     width:100%;
     color: gainsboro;
 }
-h1{
+.h1{
     color: red;
 }
-h3{
+.h3{
     color: khaki;
 }
-button{
-    color: royalblue;
+.button{
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 13px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
 }
-hr{
+.hr{
     color: darkgray;
 }
-body {
+.body {
     backround-color: red;
 }
-img{
-    width:50%;
+.img{
+    width:15%;
 }
