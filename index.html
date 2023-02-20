@@ -8,21 +8,36 @@
 img {text-align: center;}
 h1 {text-align: center;}
 p {text-align: center;}
-a {text-align: center;}
 footer {text-align: center;}
+.container {
+  height: 150px;
+  position: relative;
+  border: 3px solid green;
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
   </style>
 </head>
 
 <body>
   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2525.5463755979736!2d-103.20486998413436!3d50.7283543751821!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52e207ac743aa401%3A0xf7b8f693106dfdfd!2sK%20%26%20K%20Kitchen!5e0!3m2!1sen!2sca!4v1676833183896!5m2!1sen!2sca" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" style="text-align: vertical-center;"></iframe>
   <img src="https://raw.githubusercontent.com/KandKKitchen/KandKKitchen.github.io/main/fhifi..jpeg" style="width:15%;">
-  <hr>
-  <h1 style="text-align: center;">Welcome to K&K Kitchen's online menu</h1>
-  <hr>
+  <h1>Welcome to K&K Kitchen's online menu</h1>
   <p>location:317 main street lemberg SK Canada</p>
   <p>phone number:+1(306)-335-8888</p>
   <p>welcome to K & K Kitchen, we serve chinese and canadian dishes</p>
-  <a href="https://kandkkitchen.github.io/file2%20-%20Copy.html" style="text-align: center;"><button>menu</button></a> 
+  <div class="container">
+    <div class="center">
+      <a href="https://kandkkitchen.github.io/file2%20-%20Copy.html" style="text-align: center;"><button>menu</button></a> 
+    </div>
+  </div>
   <p>opening hours:</p>
   <p> monday:closed,teusday-satuday:9:30am to 7:00pm,sunday:10:00am to 7:00</p>
   <footer><h6>made by Jayden Yu</h6></footer>
