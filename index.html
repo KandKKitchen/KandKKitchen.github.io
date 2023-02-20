@@ -5,9 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>KandKKitchen</title>
   <style>
+.align {
+  margin-left: auto;
+  margin-right: auto;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
 h1 {text-align: center;}
 p {text-align: center;}
-td {text-align: center;}
 footer {text-align: center;}
 .container {
   height: 100px;
@@ -36,7 +54,7 @@ footer {text-align: center;}
       <a href="https://kandkkitchen.github.io/file2%20-%20Copy.html" style="text-align: center;"><button>menu</button></a> 
     </div>
   </div>
-  <table>
+  <table class="align">
   <tr>
     <th>date</th>
     <th>time open</th>
