@@ -5,6 +5,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>KandKKitchen</title>
   <style>
+
+        /* Styling the Body element i.e. Color,
+        Font, Alignment */
+        body {
+            font-family: Verdana;
+        }
+        /* Styling the Form (Color, Padding, Shadow) */
+ 
+        /* Styling form-control Class */
+        .form-control {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+ 
+        /* Styling form-control Label */
+        .form-control label {
+            display: block;
+            margin-bottom: 10px;
+        }
+ 
+        /* Styling form-control input,
+        select, textarea */
+        .form-control input,
+        .form-control select,
+        .form-control textarea {
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            padding: 10px;
+            display: block;
+            width: 95%;
+        }
+ 
+        /* Styling form-control Radio
+        button and Checkbox */
+ 
+        /* Styling Button */
+        button {
+            background-color: #05c46b;
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            font-size: 21px;
+            display: block;
+            width: 100%;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
 .container { 
   height: 40px;
   position: relative; 
@@ -105,9 +153,73 @@ p {text-align: center;}
       <a href="https://kandkkitchen.github.io/file2%20-%20Copy.html"><button>view menu</button></a>
     </div>
   </div>
+        <!-- Create Form -->
+    <form id="form">
+ 
+        <!-- Details -->
+        <div class="form-control">
+            <label for="name" id="label-name">
+                Name
+            </label>
+ 
+            <!-- Input Type Text -->
+            <input type="text"
+                   id="name"
+                   placeholder="Enter your name" />
+        </div>
+  
+        <div class="form-control">
+            <label for="email" id="label-email">
+                Email
+            </label>
+ 
+            <!-- Input Type Email-->
+            <input type="email"
+                   id="email"
+                   placeholder="Enter your email" />
+        </div>
+  
+        <div class="form-control">
+            <label>
+              how good is our restaurant?
+            </label>
+            <!-- Input Type Checkbox -->
+            <label for="inp-1">
+                <input type="checkbox"
+                       name="inp">very bad</input></label>
+            <label for="inp-2">
+                <input type="checkbox"
+                       name="inp">bad</input></label>
+            <label for="inp-3">
+                <input type="checkbox"
+                       name="inp">not bad</input></label>
+            <label for="inp-4">
+                <input type="checkbox"
+                       name="inp">good</input></label>
+            <label for="inp-5">
+                <input type="checkbox"
+                       name="inp">very good</input></label>
+        </div>
+  
+        <div class="form-control">
+            <label for="comment">
+                Any comments or suggestions
+            </label>
+ 
+            <!-- multi-line text input control -->
+            <textarea name="comment" id="comment"
+                placeholder="Enter your comment here">
+            </textarea>
+        </div>
+  
+        <!-- Multi-line Text Input Control -->
+        <button type="submit" value="submit">
+            Submit
+        </button>
+    </form>
   <footer><h6>made by Jayden Yu</h6></footer>
   <img src="fhifi..jpeg">
-  
+
   
 </body>
 
