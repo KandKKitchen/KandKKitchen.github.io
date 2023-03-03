@@ -15,7 +15,7 @@
  
         /* Styling form-control Class */
         .form-control {
-            text-align: right;
+            text-align: center;
             margin-bottom: 25px;
         }
  
@@ -203,7 +203,7 @@ p {text-align: center;}
         <!-- Multi-line Text Input Control -->
           <div class="container">
             <div class="center">
-              <button type="submit" value="submit">
+              <button type="submit" value="submit" onclick="myFunction()">
                  Submit
               </button>
             </div>
@@ -211,7 +211,11 @@ p {text-align: center;}
     </form>
   <footer><h6>made by Jayden Yu</h6></footer>
   <img src="fhifi..jpeg">
-
+  <script>
+    function myFunction() {
+      document.getElementById("demo").innerHTML = "thank you!!";
+    }
+  </script>
   
 </body>
 
