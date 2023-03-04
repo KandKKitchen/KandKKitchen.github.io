@@ -207,19 +207,30 @@ p {text-align: center;}
         <!-- Multi-line Text Input Control -->
           <div class="container">
             <div class="center">
-              <button type="submit" value="submit" id="demo" onclick="myFunction()">
-                 Submit
-              </button>
+              <input type="button" onclick="CollapseForm()" value="summit" style="width:300px;">
             </div>
           </div>
     </form>
   <footer><h6>made by Jayden Yu</h6></footer>
-  <img src="fhifi..jpeg">
-  <script>
-    function myFunction() {
-      document.getElementById("demo").innerHTML = "thank you!!";
+
+  <script type="text/javascript">
+    function CollapseForm()
+    {
+    // Two places to customize:
+
+    // Specify the id of the form.
+    var IDofForm = "form1";
+
+    // Specify the id of the div containing the form.
+    var IDofDivWithForm = "example1";
+
+    // This line submits the form. (If Ajax processed, call Ajax function, instead.)
+    document.getElementById(IDofForm).submit();
+
+    // This line collapses the form.
+    document.getElementById(IDofDivWithForm).style.display = "none";
     }
-  </script>
+    </script>
   
 </body>
 
