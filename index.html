@@ -142,8 +142,8 @@ p {text-align: center;}
     </div>
   </div>
         <!-- Create Form -->
-    <div id="example1" style="text-align:center; border:1px solid black; padding:10px;">
-    <form id="form1" method="post" action="script.php">
+    <div id="example3" style="text-align:center; border:1px solid black; padding:10px;">
+    <form id="form3">
  
         <!-- Details -->
         <div class="form-control">
@@ -208,10 +208,14 @@ p {text-align: center;}
         <!-- Multi-line Text Input Control -->
           <div class="container">
             <div class="center">
-              <input type="button" onclick="CollapseForm()" value="summit" style="width:300px;">
+              <input type="button" onclick="ReplaceForm()" value="Click Me" style="width:300px;">
             </div>
           </div>
     </form>
+  </div>
+  <div id="for_replacement" style="display:none;">
+    <p>
+    <b>Thank you!</b>
   </div>
   <footer><h6>made by Jayden Yu</h6></footer>
 
@@ -232,7 +236,7 @@ p {text-align: center;}
     // This line collapses the form.
     document.getElementById(IDofDivWithForm).style.display = "none";
     }
-    </script>
+  </script>
   
 </body>
 
