@@ -142,7 +142,8 @@ p {text-align: center;}
     </div>
   </div>
         <!-- Create Form -->
-    <form action="imdex.html">
+    <div id="myDIV">
+    <form>
  
         <!-- Details -->
         <div class="form-control">
@@ -207,11 +208,22 @@ p {text-align: center;}
         <!-- Multi-line Text Input Control -->
           <div class="container">
             <div class="center">
-              <input type="submit">
+              <button onclick="myFunction()">submit</button>
             </div>
           </div>
     </form>
+  </div>
   <footer><h6>made by Jayden Yu</h6></footer>
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myDIV");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
   
 </body>
 
