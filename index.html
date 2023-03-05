@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-ca">
 <head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
   <link rel="stylesheet" type="text/css" href="file 1c.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>KandKKitchen</title>
@@ -108,6 +109,13 @@ p {text-align: center;}
     footer{text-align: center;}
 
   </style>
+  <script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("form,button").toggle();
+  });
+});
+</script>
 </head>
 
 <body>
@@ -213,20 +221,10 @@ p {text-align: center;}
   </div>
   <div class="container">
     <div class="center">
-      <button onclick="myFunction()">submit</button>
+      <button>submit</button>
     </div>
   </div>
   <footer><h6>made by Jayden Yu</h6></footer>
-  <script>
-  function myFunction() {
-    var x = document.getElementById("myDIV");
-    if (x.style.display === "none") {
-      x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
-</script>
   
 </body>
 
