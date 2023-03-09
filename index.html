@@ -112,14 +112,43 @@ p {text-align: center;}
 
   </style>
   <script>
-$(document).ready(function(){
-  $("h3").hide()
-  $("button").click(function(){
-    $("h3").show()
-    $("#myDIV,button").toggle();
-  });
-});
-</script>
+    function clicksurvey() {
+      if (window.localStorage!==undefined) {
+        if (localStorage.badVotes) {
+        localStorage.badVotes = Number(localStorage.badVotes) + 1;
+        } else {
+        localStorage.badVotes = 1;
+        }
+        document.getElementById("result").innerHTML = "Number of people disliking our food: " + localStorage.badVotes + ".";
+      } else {
+        document.getElementById("result").innerHTML = "sorry,this survey doesn't work on this browser!";
+      }
+    }
+    function clicksurvey2() {
+      if (window.localStorage!==undefined) {
+        if (localStorage.maybeVotes) {
+        localStorage.maybeVotes = Number(localStorage.maybeVotes) + 1;
+        } else {
+        localStorage.maybeVotes = 1;
+        }
+        document.getElementById("result2").innerHTML = "Number of people saying its so-so for our food: " + localStorage.maybeVotes + ".";
+      } else {
+        document.getElementById("result2").innerHTML = "sorry,this survey doesn't work on this browser!";
+      }
+    }
+    function clicksurvey3() {
+      if (window.localStorage!==undefined) {
+        if (localStorage.goodVotes) {
+        localStorage.goodVotes = Number(localStorage.goodVotes) + 1;
+        } else {
+        localStorage.goodVotes = 1;
+        }
+        document.getElementById("result3").innerHTML = "Number of people liking our food: " + localStorage.goodVotes + ".";
+      } else {
+        document.getElementById("result3").innerHTML = "sorry,this survey doesn't work on this browser!";
+      }
+    }
+  </script>
 </head>
 
 <body>
@@ -156,81 +185,14 @@ $(document).ready(function(){
       <a href="https://kandkkitchen.github.io/file2%20-%20Copy.html"><button>view menu</button></a>
     </div>
   </div>
-        <!-- Create Form -->
-  <div id="myDIV">
-    <form>
- 
-        <!-- Details -->
-        <div class="form-control">
-            <label for="name" id="label-name">
-                Name
-            </label>
- 
-            <!-- Input Type Text -->
-            <input type="text"
-                   id="name"
-                   placeholder="Enter your name" />
-        </div>
-  
-        <div class="form-control">
-            <label for="email" id="label-email">
-                Email
-            </label>
- 
-            <!-- Input Type Email-->
-            <input type="email"
-                   id="email"
-                   placeholder="Enter your email" />
-        </div>
-  
-        <div class="form-control">
-            <label>
-              how good is our restaurant?<small>(each thing is above the text)</small>
-            </label>
-            <!-- Input Type Checkbox -->
-            <label for="inp-1">
-                <input type="checkbox"
-                       name="inp">very bad</input></label>
-            <hr>
-            <label for="inp-2">
-                <input type="checkbox"
-                       name="inp">bad</input></label>
-            <hr>
-            <label for="inp-3">
-                <input type="checkbox"
-                       name="inp">not bad</input></label>
-            <hr>
-            <label for="inp-4">
-                <input type="checkbox"
-                       name="inp">good</input></label>
-            <hr>
-            <label for="inp-5">
-                <input type="checkbox"
-                       name="inp">very good</input></label>
-        </div>
-  
-        <div class="form-control">
-            <label for="comment">
-                Any comments or suggestions
-            </label>
- 
-            <!-- multi-line text input control -->
-            <textarea name="comment" id="comment"
-                placeholder="Enter your comment here">
-            </textarea>
-        </div>
-  
-        <!-- Multi-line Text Input Control -->
-    </form>
-  </div>
-  <div class="container">
-    <div class="center">
-      <button>submit</button>
-    </div>
-  </div>
-  <h3>thank you!</h3>
+  <div class="innersection">
+    <input placeholder="email">
+    <h3>how good is our restraunt?</h3>
+    <p><button onclick="clicksurvey()" type="button">bad</button></p>
+    <p><button onclick="clicksurvey2()" type="button">maybe</button></p>
+    <p><button onclick="clicksurvey3()" type="button">maybe</button></p>
+  </div>  
   <footer><h6>made by Jayden Yu</h6></footer>
-  
 </body>
 
 </html>  
