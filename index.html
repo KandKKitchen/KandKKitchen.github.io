@@ -6,44 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>KandKKitchen</title>
   <style>
-  #myDIV {
-  box-shadow: 10px 10px 5px 12px lightblue;
-}
-
-        /* Styling the Body element i.e. Color,
-        Font, Alignment */
-        body {
-            font-family: Verdana;
-        }
-        /* Styling the Form (Color, Padding, Shadow) */
- 
-        /* Styling form-control Class */
-        .form-control {
-            text-align: center;
-            margin-bottom: 25px;
-        }
- 
-        /* Styling form-control Label */
-        .form-control label {
-            display: block;
-            margin-bottom: 10px;
-        }
- 
-        /* Styling form-control input,
-        select, textarea */
-        .form-control input,
-        .form-control select,
-        .form-control textarea {
-            border: 1px solid #777;
-            border-radius: 2px;
-            font-family: inherit;
-            padding: 10px;
-            display: block;
-            width: 95%;
-        }
- 
-        /* Styling form-control Radio
-        button and Checkbox */
  
 .container { 
   height: 40px;
@@ -92,7 +54,6 @@
   margin-right: auto;
 }
 table {
-  font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 100%;
 }
@@ -111,44 +72,6 @@ p {text-align: center;}
     footer{text-align: center;}
 
   </style>
-  <script>
-    function clicksurvey() {
-      if (window.localStorage!==undefined) {
-        if (localStorage.badVotes) {
-        localStorage.badVotes = Number(localStorage.badVotes) + 1;
-        } else {
-        localStorage.badVotes = 1;
-        }
-        document.getElementById("result").innerHTML = "Number of people disliking our food: " + localStorage.badVotes + ".";
-      } else {
-        document.getElementById("result").innerHTML = "sorry,this survey doesn't work on this browser!";
-      }
-    }
-    function clicksurvey2() {
-      if (window.localStorage!==undefined) {
-        if (localStorage.maybeVotes) {
-        localStorage.maybeVotes = Number(localStorage.maybeVotes) + 1;
-        } else {
-        localStorage.maybeVotes = 1;
-        }
-        document.getElementById("result2").innerHTML = "Number of people saying its so-so for our food: " + localStorage.maybeVotes + ".";
-      } else {
-        document.getElementById("result2").innerHTML = "sorry,this survey doesn't work on this browser!";
-      }
-    }
-    function clicksurvey3() {
-      if (window.localStorage!==undefined) {
-        if (localStorage.goodVotes) {
-        localStorage.goodVotes = Number(localStorage.goodVotes) + 1;
-        } else {
-        localStorage.goodVotes = 1;
-        }
-        document.getElementById("result3").innerHTML = "Number of people liking our food: " + localStorage.goodVotes + ".";
-      } else {
-        document.getElementById("result3").innerHTML = "sorry,this survey doesn't work on this browser!";
-      }
-    }
-  </script>
 </head>
 
 <body>
@@ -185,18 +108,7 @@ p {text-align: center;}
       <a href="https://kandkkitchen.github.io/file2%20-%20Copy.html"><button>view menu</button></a>
     </div>
   </div>
-  <div class="innersection">
-    <div class="container">
-      <div class="center">
-        <input placeholder="email">
-        <h2>how good is our restraunt?</h2>
-      </div>
-    </div>
-    <p><button onclick="clicksurvey()" type="button">bad</button></p>
-    <p><button onclick="clicksurvey2()" type="button">maybe</button></p>
-    <p><button onclick="clicksurvey3()" type="button">good</button></p>
-  </div>  
-  <footer><h6>made by Jayden Yu</h6></footer>
+  <footer><h6><small>made by Jayden Yu</small></h6></footer>
 </body>
 
 </html>  
